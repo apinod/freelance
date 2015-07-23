@@ -1,0 +1,2 @@
+
+@include('layout.assets.js')
