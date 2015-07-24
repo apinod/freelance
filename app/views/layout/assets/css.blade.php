@@ -11,6 +11,8 @@
 <link rel="stylesheet" href="/packages/styles/adminica/grid.css">
 <link rel="stylesheet" href="/packages/styles/adminica/mobile.css">
 
+<!-- Latest compiled and minified CSS -->
+{{-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"> --}}
 <link rel="stylesheet" href="/packages/styles/plugins/bootstrap/bootstrap-2.3.1.css">
 
 <link rel="stylesheet" href="/packages/styles/themes/skin_light.css">
@@ -21,8 +23,23 @@
 <style>
 	.navbar.navbar-fixed-top .container-fluid,
 	.navbar.navbar-fixed-bottom .container-fluid{
-		width: 90% !important;
+		width: 98% !important;
 		margin: auto;
+	}
+	.space-10 {
+		margin: 10px;
+		overflow: hidden;
+	}
+	.space-20 {
+		margin: 20px;
+		overflow: hidden;		
+	}	
+	.menu-li {
+		padding-left: 8px!important;
+		padding-right: 8px!important;
+	}
+	#main_container {
+		min-height: 400px;
 	}
 	body{
 	  font: 12px sans-serif;
@@ -169,6 +186,13 @@
 	}
 	.flat_area a {
 	  font-weight: bold;
+	}
+	.flat_area h2 {
+	  border: none;
+	  background: none;
+	  border-bottom: 1px solid #ccc;
+	  padding: 2px 5px 10px;
+	  box-shadow: 0 1px 0 #fff;
 	}
 </style>
 @yield('append_css')

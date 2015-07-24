@@ -13,5 +13,10 @@
 
 Route::get('/', function()
 {
-	return View::make('home');
+	return View::make('home')->with('menu', 'home');
+});
+
+Route::get('/giving-options', function()
+{
+	return View::make('giving-options')->with('menu', 'giving-options');
 });

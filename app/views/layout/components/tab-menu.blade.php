@@ -1,23 +1,15 @@
 <div id="nav_top" class="dropdown_menu clearfix round_top">
 	<ul class="clearfix">
-		<li><a href="#"><img src="/packages/images/icons/small/grey/laptop.png"/><span>Home</span></a></li>
-		<li><a href="#"><img src="packages/images/icons/small/grey/frames.png"/><span>Layout</span></a></li>
-		<li><a href="#"><img src="/packages/images/icons/small/grey/list.png"/><span>Base</span></a>
-			<ul>
-				<li><a href="#"><span>Typography</span></a></li>
-				<li><a href="#"><span>Tables</span></a></li>
-				<li><a href="#"><span>Forms</span></a></li>
-				<li><a href="#"><span>Buttons</span></a></li>
-				<li><a href="#"><span>Icons</span></a></li>
-			</ul>
-		</li>
-		<li><a target="_blank" href="#"><img src="/packages/images/icons/small/grey/blocks_images.png"/><span>Components</span></a></li>
-		<li><a target="_blank" href="#"><img src="/packages/images/icons/small/grey/coverflow.png"/><span>Plugins</span></a></li>
-	</ul>
-
-	<div id="mobile_nav">
-		<div class="main"></div>
-		<div class="side"></div>
-	</div>
-
+		<li {{ $menu == 'home' ? 'class="current"' : ''}}><a href="/" class="menu-li"><i class="fa fa-home"></i>&nbsp;&nbsp;Home</a></li>								
+		<li {{ $menu == 'company' ? 'class="current"' : ''}}><a href="#" class="menu-li"><i class="fa fa-building-o"></i>&nbsp;&nbsp;Company</a></li>										
+		<li {{ $menu == 'giving-options' ? 'class="current"' : ''}}><a href="/giving-options" class="menu-li"><i class="fa fa-list-ol"></i>&nbsp;&nbsp;Giving Options</a></li>	
+		<li {{ $menu == 'pages' ? 'class="current"' : ''}}><a href="#" class="menu-li"><i class="fa fa-file-text-o"></i>&nbsp;&nbsp;Pages</a></li>
+		<li {{ $menu == 'donors' ? 'class="current"' : ''}}><a href="#" class="menu-li"><i class="fa fa-user"></i>&nbsp;&nbsp;Donors</a></li>
+		<li {{ $menu == 'premiums' ? 'class="current"' : ''}}><a href="#" class="menu-li"><i class="fa fa-star"></i>&nbsp;&nbsp;Premiums</a></li>		
+		<li {{ $menu == 'gift-cards' ? 'class="current"' : ''}}><a href="#" class="menu-li"><i class="fa fa-credit-card"></i>&nbsp;&nbsp;Gift Cards</a></li>
+		<li {{ $menu == 'codes' ? 'class="current"' : ''}}><a href="#" class="menu-li"><i class="fa fa-code"></i>&nbsp;&nbsp;Codes</a></li>
+		<li {{ $menu == 'reports' ? 'class="current"' : ''}}><a href="#" class="menu-li"><i class="fa fa-bar-chart"></i>&nbsp;&nbsp;Reports</a></li>						
+		<li {{ $menu == 'communication' ? 'class="current"' : ''}}><a href="#" class="menu-li"><i class="fa fa-phone"></i>&nbsp;&nbsp;Communication</a></li>
+		<li {{ $menu == 'utilities' ? 'class="current"' : ''}}><a href="#" class="menu-li"><i class="fa fa-money"></i>&nbsp;&nbsp;Utilities</a></li>
+		<li {{ $menu == 'images' ? 'class="current"' : ''}}><a href="#" class="menu-li"><i class="fa fa-image"></i>&nbsp;&nbsp;Images</a></li>								
 </div><!-- #nav_top -->

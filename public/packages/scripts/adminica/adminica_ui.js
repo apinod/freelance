@@ -257,7 +257,7 @@ function navCurrent(){
 	var nav1 = $("#wrapper").data("adminica-nav-top");
 	var nav2 = $("#wrapper").data("adminica-nav-inner");
 
-	$('#nav_top > ul > li').eq(nav1 - 1).addClass("current").find("li").eq(nav2 - 1).addClass("current");
+	// $('#nav_top > ul > li').eq(nav1 - 1).addClass("current").find("li").eq(nav2 - 1).addClass("current");
 
 	$('#nav_top > ul > li.current > a > img').each(function(){
 		var imgPath = $(this).attr('src').replace("/grey/", "/white/");

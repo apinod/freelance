@@ -6,14 +6,14 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="brand" href="#" style="">Adminica Bootstrap</a>
+        <a class="brand" href="#" style="">Pletlanthropy</a>
 
         <ul class="nav pull-right">
           <li>
             
             <form action="" method="get" style="margin: 0; padding: 10px 15px 10px; display: inline;">
               <div class="input-append" style="margin-top: 5px;">                  
-                <input class="span2" id="appendedInputButtons" size="16" type="text"><button class="btn" type="submit"><i class="icon-search"></i>Search</button>
+                <input class="span2" id="appendedInputButtons" size="16" type="text"><button class="btn" type="submit"><i class="fa fa-search"></i>&nbsp;Search</button>
               </div>
             </form>
 
