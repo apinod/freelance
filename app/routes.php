@@ -20,3 +20,8 @@ Route::get('/giving-options', function()
 {
 	return View::make('giving-options')->with('menu', 'giving-options');
 });
+
+Route::get('/donors', function()
+{
+	return View::make('donors')->with('menu', 'donors');
+});

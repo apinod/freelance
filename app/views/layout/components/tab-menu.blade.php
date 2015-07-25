@@ -4,7 +4,7 @@
 		<li {{ $menu == 'company' ? 'class="current"' : ''}}><a href="#" class="menu-li"><i class="fa fa-building-o"></i>&nbsp;&nbsp;Company</a></li>										
 		<li {{ $menu == 'giving-options' ? 'class="current"' : ''}}><a href="/giving-options" class="menu-li"><i class="fa fa-list-ol"></i>&nbsp;&nbsp;Giving Options</a></li>	
 		<li {{ $menu == 'pages' ? 'class="current"' : ''}}><a href="#" class="menu-li"><i class="fa fa-file-text-o"></i>&nbsp;&nbsp;Pages</a></li>
-		<li {{ $menu == 'donors' ? 'class="current"' : ''}}><a href="#" class="menu-li"><i class="fa fa-user"></i>&nbsp;&nbsp;Donors</a></li>
+		<li {{ $menu == 'donors' ? 'class="current"' : ''}}><a href="/donors" class="menu-li"><i class="fa fa-user"></i>&nbsp;&nbsp;Donors</a></li>
 		<li {{ $menu == 'premiums' ? 'class="current"' : ''}}><a href="#" class="menu-li"><i class="fa fa-star"></i>&nbsp;&nbsp;Premiums</a></li>		
 		<li {{ $menu == 'gift-cards' ? 'class="current"' : ''}}><a href="#" class="menu-li"><i class="fa fa-credit-card"></i>&nbsp;&nbsp;Gift Cards</a></li>
 		<li {{ $menu == 'codes' ? 'class="current"' : ''}}><a href="#" class="menu-li"><i class="fa fa-code"></i>&nbsp;&nbsp;Codes</a></li>

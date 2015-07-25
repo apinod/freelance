@@ -17,6 +17,36 @@
 <link rel="stylesheet" href="/packages/styles/adminica/colours.css">
 
 <style type="text/css">
+	.no-padding {
+		padding: 0!important;
+	}
+	.no-padding-sides{
+		padding-left: 0!important;
+		padding-right: 0!important;
+	}
+	.col_5, .col_10, .col_90 {
+	  position: relative;
+	  display: block;
+	  float: left;	  
+	}
+	.col_5 {
+	  width: 5%!important;
+	}
+	.col_10 {
+	  width: 10%!important;
+	}
+	.col_90 {
+	  width: 90%!important;
+	}	
+	.text-center {
+		text-align: center!important;
+	}
+	.text-left {
+		text-align: left!important;
+	}
+	.text-right {
+		text-align: right!important;
+	}	
 	fieldset .label_20 {
 		width: 20%!important;
 	}
@@ -62,6 +92,18 @@
 		padding-left: 8px!important;
 		padding-right: 8px!important;
 	}
+	.section .custom-label {
+		display: inline!important;
+		line-height: 15px!important;
+		margin-bottom: -5px;
+		margin-top: 0px!important;
+		font-size: 13px!important;
+		font-weight: 700!important;
+		padding: 15px 10px 10px!important;
+		margin-right: 10px;
+		color: #333;
+		font-family: 'Open Sans', sans-serif;			
+	}	
 </style>
 
 @yield('append_css')

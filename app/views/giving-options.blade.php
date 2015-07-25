@@ -3,14 +3,17 @@
 @section('content')
 
 <div class="flat_area grid_16">
-	<h2>Giving Options
-		{{-- <small>- Welcome to Pletlanthropy.</small> --}}
-	</h2>
+	<h2>Giving Options</h2>
 </div>
 
 <div class="grid_16 box">
-	<h2 class="box_head bigger">
-		<input style="margin-top: 0; margin-right: 5px;" type="checkbox" id="optionsCheckbox" value="option1" checked>Filters Active Only
+	<h2 class="box_head bigger">		
+		<div class="section no-padding">									
+			<div class="uniform" style="display: inline-block; vertical-align: middle;">
+				<input type="checkbox" name="answer4" id="yes4" checked/>
+			</div>
+			<h3 style="display: inline">Filters Active Only</h3>
+		</div>		
 	</h2>
 	<div>	
 		<div class="block">
@@ -41,7 +44,7 @@
 			            <td>08/12/2015</td>
 						<td>$10500</td>			            			            			            
 			            <td>5</td>
-			            <td style="text-align: center;"><a href="#edit_form" role="button" class="btn btn-warning btn-small" data-toggle="modal"><i class="fa fa-edit"></i>&nbsp;&nbsp;Edit</a></td>
+						<td style="text-align: center;"><a href="#edit_form" role="button" class="btn btn-warning btn-small dialog_button" data-dialog="dialog_form"><i class="fa fa-edit"></i>&nbsp;&nbsp;Edit</a></td>	
 			          </tr>
   			          <tr>
 			            <td width="200px">Lorem ipsum ad his scripta.</td>
@@ -51,7 +54,7 @@
 			            <td>11/10/2015</td>
 						<td>$12000</td>			            
 			            <td>68</td>
-						<td style="text-align: center;"><a href="#edit_form" role="button" class="btn btn-warning btn-small" data-toggle="modal"><i class="fa fa-edit"></i>&nbsp;&nbsp;Edit</a></td>			            
+						<td class="text-center"><a href="#edit_form" role="button" class="btn btn-warning btn-small dialog_button" data-dialog="dialog_form"><i class="fa fa-edit"></i>&nbsp;&nbsp;Edit</a></td>	           
 			          </tr>
 			          <tr>
 			            <td width="200px">Lorem ipsum ad his scripta.</td>
@@ -61,7 +64,7 @@
 			            <td>08/12/2015</td>
 						<td>$10500</td>			            			            
 			            <td>5</td>
-						<td style="text-align: center;"><a href="#edit_form" role="button" class="btn btn-warning btn-small" data-toggle="modal"><i class="fa fa-edit"></i>&nbsp;&nbsp;Edit</a></td>			            			            
+						<td class="text-center"><a href="#edit_form" role="button" class="btn btn-warning btn-small dialog_button" data-dialog="dialog_form"><i class="fa fa-edit"></i>&nbsp;&nbsp;Edit</a></td>	   			            
 			          </tr>
   			          <tr>
 			            <td width="200px">Lorem ipsum ad his scripta.</td>
@@ -71,7 +74,7 @@
 			            <td>11/10/2015</td>
 						<td>$1000</td>			            			            			            
 			            <td>68</td>
-						<td style="text-align: center;"><a href="#edit_form" role="button" class="btn btn-warning btn-small" data-toggle="modal"><i class="fa fa-edit"></i>&nbsp;&nbsp;Edit</a></td>			            			            
+						<td style="text-align: center;"><a href="#edit_form" role="button" class="btn btn-warning btn-small dialog_button" data-dialog="dialog_form"><i class="fa fa-edit"></i>&nbsp;&nbsp;Edit</a></td>	
 			          </tr>
 			          <tr>
 			            <td width="200px">Lorem ipsum ad his scripta.</td>
@@ -156,13 +159,13 @@
 								</div>						
 							</fieldset>
 						</div>
-						<div class="col_30">	
-							<div class="space-10"></div>
-							<fieldset class="no-border">
-								<div class="clearfix">
-									<label for="yes1"><input type="checkbox" name="answer1" id="yes1">Remove if met</label>
-								</div>						
-							</fieldset>
+						<div class="col_30">
+							<div class="section no-padding-sides">									
+								<div class="uniform" style="display: inline-block; vertical-align: bottom;">
+									<input type="checkbox" name="answer4" id="yes4"/>
+								</div>
+								<label class="custom-label">Remove if met</label>									
+							</div>
 						</div>
 					</div>			
 
@@ -171,18 +174,22 @@
 							<fieldset class="label_side label_small top no-border">
 								<label for="text_field_inline" class="no-border">Expiration</label>
 								<div class="no-border">
-									<input type="text" name="expiration" placeholder="  /   /">																
+									<div class="clearfix">
+										<input type="text" class="datepicker">
+									</div>
 								</div>							
 							</fieldset>
 						</div>
-						<div class="col_30">	
-							<div class="space-10"></div>
-							<fieldset class="no-border">
-								<div class="clearfix">
-									<label for="yes2"><input type="checkbox" name="answer2" id="yes2">Remove if expired</label>
-								</div>							
-							</fieldset>
+						
+						<div class="col_30">
+							<div class="section no-padding-sides">									
+								<div class="uniform" style="display: inline-block; vertical-align: bottom;">
+									<input type="checkbox" name="answer4" id="yes4"/>
+								</div>
+								<label class="custom-label">Remove if expired</label>									
+							</div>
 						</div>
+
 					</div>	
 
 					<div class="columns clearfix">
