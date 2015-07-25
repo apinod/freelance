@@ -74,6 +74,18 @@ function adminicaUi(){
 	stackNavCurrent();
 
 
+	// Isolated mode
+
+	$(".isolate").parent().parent().addClass('isolate');
+
+
+	// Slide to top link
+
+	if($.fn.UItoTop){
+		$().UItoTop({ easingType: 'easeOutQuart' });
+	}
+
+
  	// Content Box Toggle Config
 
 	$("a.toggle").on('click', function(){
@@ -115,6 +127,89 @@ function adminicaUi(){
 	});
 
 
+ 	// Content Box Tabs Config
+
+	if($.fn.tabs){
+		$( ".tabs" ).tabs({
+			fx: {opacity: 'toggle', duration: 'fast'},
+			select: function(e, ui){
+				$(this).removeClass('all_open', 200);
+				$(this).removeClass('closed', 200);
+				$(this).find('.toggle_closed').trigger('click');
+			}
+		});
+
+		$(".tabs:not('.all_open') .show_all_tabs").on('click', function(){
+			$(this).parent().siblings('.tab_header').children().removeClass('ui-tabs-selected');
+			$(this).parent().parent().addClass('all_open');
+		});
+
+		$(".tabs.all_open .show_all_tabs").on('click', function(){
+			$(this).parent().siblings('.tab_header').find("li:first-child").trigger('click').addClass('ui-tabs-selected');
+			$(this).parent().parent().removeClass('all_open');
+		});
+
+		$( ".side_tabs" ).tabs({
+			fx: {opacity: 'toggle', duration: 'fast', height:'auto'}
+		});
+	}
+
+
+	// Content Box Accordion Config
+
+	if($.fn.accordion){
+		$( ".content_accordion" ).accordion({
+			collapsible: true,
+			active:false,
+			header: 'h3.bar', // this is the element that will be clicked to activate the accordion
+			autoHeight:false,
+			event: 'mousedown',
+			icons:false,
+			animated: true
+		});
+	}
+
+
+	// Sortable Content Boxes Config
+
+	if($.fn.sortable){
+		$( ".main_container" ).sortable({
+			handle:'.grabber',  // the element which is used to 'grab' the item
+			items:'div.box', // the item to be sorted when grabbed!
+			opacity:0.8,
+			revert:true,
+			tolerance:'pointer',
+			helper:'original',
+			forceHelperSize:true,
+			placeholder: 'dashed_placeholder',
+			forcePlaceholderSize:true,
+			cursorAt: { top: 16, right: 16 }
+		});
+	}
+
+
+	// Sortable Accordion Items Config
+
+		$( ".content_accordion" ).not(".no_rearrange").sortable({
+			handle:'a.handle',
+			axis: 'y', // the items can only be sorted along the y axis
+			revert:true,
+			tolerance:'pointer',
+			forcePlaceholderSize:true,
+			cursorAt: { top: 16, right: 16 }
+		});
+
+
+	// static tables alternating rows
+
+		$('table.static tr:even').addClass("even");
+
+
+	// static table input
+
+		$("table.static input[type=text]").addClass("text");
+
+
 	// Content Boxes without a titlebar
 
 		$('.box').each(function(){
@@ -129,9 +224,9 @@ function adminicaUi(){
 
 	// Button Classes
 
-		$("input[type=button]").not(".btn").addClass("button");
+		$("input[type=button]").addClass("button");
 
-		$('.button').each(function(){
+		$('button, .button').each(function(){
 			if (! $(this).children().is('span')){
 				$(this).addClass('icon_only');
 			}
@@ -153,7 +248,7 @@ function adminicaUi(){
 			$(this).parent().addClass('has_columns');
 		});
 
-		$(".button").on('mousedown',function(){
+		$("button, .button").on('mousedown',function(){
 			$(this).addClass("button_down");
 		}).on('mouseup',function(){
 			$(this).removeClass("button_down");
@@ -161,11 +256,69 @@ function adminicaUi(){
 			$(this).removeClass("button_down");
 		});
 
+		// Isotope
 
+		if($.fn.isotope){
+			$(".isotope_holder ul").isotope({
+				animationEngine:"best-available",
+				animationEngine:"jquery",
+				sortBy:"sort_1",
+				filter: "*",
+				getSortData : {
+				    sort_1 : function ( $elem ) {
+				      return $elem.find('.sort_1').text();
+				    },
+				    sort_2 : function ( $elem ) {
+				      return $elem.find('.sort_2').text();
+				    },
+				    sort_3 : function ( $elem ) {
+				      return $elem.find('.sort_3').text();
+				    },
+				    sort_4 : function ( $elem ) {
+				      return $elem.find('.sort_4').text();
+				    }
+				    // add more if you need more sort types
+				}
+			});
+
+			$(".isotope_filter").on('click',function(){
+				var x = $(this).attr("data-isotope-filter");
+					$(".isotope_holder ul").isotope({filter: x});
+
+				return false;
+			});
+
+			$(".isotope_sort").on('click',function(){
+				var y = $(this).attr("data-isotope-sort");
+
+				$(".isotope_holder ul").isotope({sortBy: y});
+
+				return false;
+			});
+
+			$(".isotope_filter_complex").on("click", function(){
+				$(".isotope_filter_complex").removeClass("complex_current");
+				$(".isotope_filter_complex:checked").addClass("complex_current");
+
+				var checked = ""
+
+				$(".complex_current").each(function(){
+					checked = checked+""+$(this).attr("data-isotope-filter");
+				});
+				console.log(checked);
+				$(".isotope_holder ul").isotope({filter: checked});
+
+				if(checked == "**"){
+					$(".isotope_holder ul").isotope({filter: "*"});
+				}
+
+			});
+		}
 
 
 	columnHeight();
-  centerContent();
+  	centerContent();
+	refreshIsotope();
 
 	$(window).resize(function() {
 		columnHeight();
@@ -187,8 +340,13 @@ function adminicaInit(){
 		});
 	});
 
+
 	// fade in once page is fully loaded
 	hideLoadingOverlay();
+}
+
+function refreshIsotope(){
+	$(".isotope_holder ul").isotope('reLayout');
 }
 
 function hideLoadingOverlay(){
@@ -257,7 +415,7 @@ function navCurrent(){
 	var nav1 = $("#wrapper").data("adminica-nav-top");
 	var nav2 = $("#wrapper").data("adminica-nav-inner");
 
-	// $('#nav_top > ul > li').eq(nav1 - 1).addClass("current").find("li").eq(nav2 - 1).addClass("current");
+	$('#nav_top > ul > li').eq(nav1 - 1).addClass("current").find("li").eq(nav2 - 1).addClass("current");
 
 	$('#nav_top > ul > li.current > a > img').each(function(){
 		var imgPath = $(this).attr('src').replace("/grey/", "/white/");

@@ -46,9 +46,6 @@
 	font-weight: bold;
 	min-height: 36px;
 }
-.stackbar > ul > li > a:hover{
-	text-decoration: none;
-}
 .stackbar.stack_view > ul > li > a > img{
 	display: block;
 	float: left;
@@ -107,13 +104,9 @@
 	font-size: 12px;
 	line-height: 36px;
 	font-family: 'Open Sans',sans-serif;
-	color: #555;
 
 	display: inline;
 	background: none;
-}
-.stackbar.list_view > ul > li > a:hover > span{
-	color: #000;
 }
 
 .stackbar.list_view ul ul{
@@ -194,11 +187,6 @@
 	display: block;
 	line-height: 15px;
 	padding: 0 5px;
-	color: #555555;
-}
-.stackbar ul ul li a:hover{
-	text-decoration: none;
-	color: #000;
 }
 .stackbar ul ul li.current{
 	margin: -1px 8px -1px 8px;

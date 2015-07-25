@@ -3,8 +3,7 @@ margin:0px 10px 10px 10px !important;
 *top:10px;
 }
 
-body #sidebar,
-body #wrapper #sidebar.fixed{
+body #sidebar{
 	display: block;
 	position: fixed !important;
 	left:-200px;
@@ -25,9 +24,6 @@ body #wrapper #sidebar.fixed{
 	box-shadow:none !important;
 	}
 
-body #wrapper.has_fixed_bar #sidebar{
-	top: 36px !important;
-}
 
 
 .sidebar .user_box h2, #topbar .user_box h2{

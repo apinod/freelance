@@ -16,7 +16,8 @@ a#login_logo {
 
 /* Coloured Header Gradients, eg. Sortable Boxes, Tab Boxes, Date-picker, etc. */
 .grad_skin,
-.alert_badge,
+button,
+.badge,
 .calendar_grad, .dropdown_menu > ul > li.current > a, .box_head, .tab_header, .tab_sider, #login_box #bar, #search_side, .wizard .wizard_steps ul, .dataTables_wrapper .ui-widget-header, .ui-button .ui-state-active, .ui-widget-header .ui-state-active, .ui-buttonset .ui-button.ui-state-active, .ui-multiselect .ui-widget-header, .ui-slider .ui-slider-range, .slider-content .selected .title, .fc-header .fc-state-active, .fc-header .ui-state-active,.dataTables_wrapper .dataTables_paginate span span.ui-state-disabled,
 .ui-progressbar .ui-progressbar-value,
 .stackbar.stack_view > ul > li > a > span,
@@ -32,7 +33,9 @@ div.stackbar.stack_view > ul > li > a > span::before  {
  }
 
 
-grad_skin_reverse{
+grad_skin_reverse,
+button:hover
+{
     background-color: #9e253b;
 	background-image:         linear-gradient(top, #7C1F30, #9e253b);
 
@@ -41,7 +44,7 @@ grad_skin_reverse{
 
 
 /* Links, hovers, tabs*/
-div.main_container p a, #sidebar h3 a,#stackbar h3 a, #topbar h3 a, .text a, body #template_options a, a.show_all_tabs  {
+div.main_container p a, #sidebar h3 a, #topbar h3 a, .text a, body #template_options a, a.show_all_tabs  {
     color: #BF2453
 }
 

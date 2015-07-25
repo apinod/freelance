@@ -419,13 +419,11 @@ html body * dd.clear {
 .columns.shade {
   position: relative;
   z-index: 100;
-  border-bottom: 1px solid #8D949E !important;
+  border-bottom: 1px solid #BAC5CC !important;
   margin-bottom: -1px;
 }
-.columns.shade,
-.columns.shade > div,
-.columns.shade > div > div {
-  border-color: #8D949E;
+.columns.shade {
+  border-color: #BAC5CC;
 }
 .col_100 {
   width: 100%;
@@ -456,9 +454,6 @@ html body * dd.clear {
 }
 .col_40 {
   width: 40%;
-}
-.col_30 {
-  width: 30%;
 }
 .col_20 {
   width: 20%;

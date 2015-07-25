@@ -13,7 +13,7 @@
             
             <form action="" method="get" style="margin: 0; padding: 10px 15px 10px; display: inline;">
               <div class="input-append" style="margin-top: 5px;">                  
-                <input class="span2" id="appendedInputButtons" size="16" type="text"><button class="btn" type="submit"><i class="fa fa-search"></i>&nbsp;Search</button>
+                <input class="span2 span-button" id="appendedInputButtons" size="16" type="text"><button class="btn" type="submit"><i class="fa fa-search"></i>&nbsp;Search</button>
               </div>
             </form>
 

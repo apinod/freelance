@@ -19,7 +19,6 @@
         @include('layout.assets.css')
     </head>
     <body>
-{{--         @include('layout.notifications') --}}
         @include('layout.content')
         @include('layout.footer')
     </body>

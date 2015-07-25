@@ -5,7 +5,7 @@
 	right:0;
 	left:0;
 	background-color:rgb(0,0,0);
-	background-color:rgba(0,0,0,0.75);
+	background-color:rgba(0,0,0,0.45);
 	*background-color:black;
 	z-index: 9999;
 	border-top: 1px solid #000;
@@ -14,12 +14,9 @@
 }
 
 #template_options a{
-	color: #ccc;}
+color: #ccc;}
 #template_options a:hover{
-	color: #fff;
-	text-decoration: none;
-}
-
+color: #fff;}
 
 
 #template_options h3{
@@ -28,7 +25,7 @@
 	margin-bottom:0;
 	line-height:0px;
 	float:left;
-	margin-top:11px;
+	margin-top:5px;
 }
 
 
@@ -44,7 +41,7 @@
 	background-color:rgba(0,0,0,0.35);
 	float:left;
 	display: inline;
-	padding:5px 5px 5px;
+	padding:5px 5px 2px;
 	margin-right:5px;
 	margin-top:5px;
 
@@ -52,11 +49,11 @@
 }
 
 
-#template_options div label{margin-right:5px; font-weight:bold; font-size:12px; display: inline; color: #fff;}
+#template_options div label{margin-right:5px; font-weight:bold; font-size:12px;}
 #template_options div a{font-size:12px !important;}
 #template_options div span{
-	color:rgba(255,255,255,0.3);
-	margin:0 1px 0 5px;}
+	color:#666;
+	margin:0 2px 0 3px;}
 
 .theme_colour a{
 	border:0px solid #ccc !important;
@@ -65,6 +62,7 @@
 	height:10px;
 	margin: 0 2px 0 2px;
 	}
+
 .theme_colour a span{display:none !important;}
 
 .theme_colour a.black{background-color:#333;}

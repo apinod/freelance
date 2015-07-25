@@ -6,5 +6,6 @@
 #.env.php
 #.DS_Store
 #Thumbs.db
-/Adminica 2.3
 /public/packages/Adminica 2.3
+/app/views1
+/public/packages1

@@ -7,8 +7,7 @@
 /* `Basic HTML
 ----------------------------------------------------------------------------------------------------*/
 body {
-  /*font: 12px/1.5 sans-serif;*/
-  font: 12px sans-serif;  
+  font: 12px/1.5 sans-serif;
   color: #333;
 }
 a:focus {
@@ -921,6 +920,9 @@ li:last-child ul.drawer li:last-child a {
   position: relative;
   min-width: 700px;
 }
+#wrapper.has_fixed_bar {
+  padding-top: 50px;
+}
 div.main_container {
   margin: 0px 10px 10px 196px;
   *top: 10px;
@@ -1769,6 +1771,9 @@ input.text {
   height: 32px;
   padding: 0 0 0 5px;
 }
+fieldset.label_side > div > input.text {
+  width: 100%;
+}
 input.text.width_50 {
   width: 50%;
 }
@@ -1860,9 +1865,6 @@ fieldset.label_side.label_small.compressed > label {
 .compressed fieldset.no_label > div,
 fieldset.compressed.no_label > div {
   padding: 8px 9px;
-}
-fieldset.label_side > div > input.text {
-  width: 100%;
 }
 fieldset.label_side.label_small > label {
   width: 70px;
