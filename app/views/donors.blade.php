@@ -3,9 +3,9 @@
 @section('content')
 
 <div class="flat_area grid_16">
-	<h2>Donors</h2>
+	<h2><i class="fa fa-user"></i>&nbsp;Donors</h2>
 
-	<form class="form-search" action="" method="post">
+	<form class="form-search" action="" method="get">
 	  	<input type="text" class="pull-left input-medium search-query">  
 	  	<button style="margin-left: 5px;" type="submit" class="btn btn-primary padding-sides10 icon_only text_only pull-left"><i class="fa fa-search"></i>&nbsp;&nbsp;Search</button>	
 	</form>
@@ -66,6 +66,143 @@
 			        </tbody>
 		        </table>
 			</div>
+		</div>
+	</div>
+</div>
+
+<div class="space-4"></div>
+
+<div class="columns clearfix">
+	<div class="col_60">
+		<div class="section">&nbsp;</div>
+	</div>			
+	<div class="col_40">
+		<div class="grid_16 box">
+			<h2 class="box_head bigger blue">Gift History</h2>
+
+			<div class="block" style="height: 150px; overflow: scroll;">
+				<table class="table table-striped">
+					<thead>
+			          <tr>
+			            <th class="text-center">Date</th>
+			            <th class="text-center">Amount</th>
+			            <th class="text-center">Fund</th>
+			            <th class="text-center">Appeal</th>
+			          </tr>
+			        </thead>
+			        <tbody>			        
+			        	<tr>
+			            	<td class="text-center">01/05/2015</td>
+		        			<td class="text-center">$ 500.00</td>
+		        			<td class="text-center">$ 10,000.00</td>			        			
+							<td class="text-success text-center"><i class="fa fa-check"></i></td>						
+			        	</tr>								
+			        	<tr>
+			            	<td class="text-center">01/05/2015</td>
+		        			<td class="text-center">$ 500.00</td>
+		        			<td class="text-center">$ 10,000.00</td>			        			
+							<td class="text-success text-center"><i class="fa fa-check"></i></td>						
+			        	</tr>								
+			        	<tr>
+			            	<td class="text-center">01/05/2015</td>
+		        			<td class="text-center">$ 500.00</td>
+		        			<td class="text-center">$ 10,000.00</td>			        			
+							<td class="text-error text-center"><i class="fa fa-close"></i></td>						
+			        	</tr>								
+			        	<tr>
+			            	<td class="text-center">01/05/2015</td>
+		        			<td class="text-center">$ 500.00</td>
+		        			<td class="text-center">$ 10,000.00</td>			        			
+							<td class="text-success text-center"><i class="fa fa-check"></i></td>						
+			        	</tr>												        	
+					</tbody>
+				</table>
+			</div> 
+		</div>
+
+		<div class="space-4"></div>
+
+
+		<div class="box grid_16 light">
+			<h2 class="box_head">Interests</h2>
+			<div class="block">
+				<table class="table"
+					<thead>
+			          <tr>
+			            <th class="text-center">Available</th>
+			            <th style="width: 50px;">&nbsp;</th>
+			            <th class="text-center">Selected</th>
+			          </tr>
+			        </thead>
+			        <tbody>			        
+			        	<tr style="height: 200px;">
+			            	<td>
+								<select name="categories" multiple="multiple" class="col_90">
+									<option>Dogs</option>
+									<option>Cats</option>
+									<option>Medical</option>
+									<option>Toys</option>
+									<option>Beds</option>
+									<option>Emergency</option>					  
+									<option>Other</option>												  
+								</select>
+			            	</td>
+		        			<td class="text-center" style="width: 50px; vertical-align: middle;">
+		        				<a href="#" role="button" onclick="return false;" class="btn btn-warning" style="display: block;"><i class="fa fa-long-arrow-left"></i></a>
+		        				<div class="space-4"></div>
+								<a href="#" role="button" onclick="return false;" class="btn btn-warning" style="display: block;"><i class="fa fa-long-arrow-right"></i></a>
+		        			</td>
+			            	<td>
+								<select name="categories" multiple="multiple" class="col_90">
+									<option>Women</option>
+									<option>Cars</option>
+								</select>
+			            	</td>
+			        	</tr>											        	
+					</tbody>
+				</table>
+
+				<div class="button_bar clearfix"></div>		
+			</div>
+		</div>
+
+		<div class="space-4"></div>
+
+		<div class="grid_16 box">
+			<h2 class="box_head bigger blue">Pledges</h2>
+
+			<div class="block" style="height: 150px; overflow: scroll;">
+				<table class="table table-striped">
+					<thead>
+			          <tr>
+			            <th class="text-center">Start Date</th>
+			            <th class="text-center">End Date</th>
+			            <th class="text-center">Amount</th>
+			            <th class="text-center">Frequency</th>
+			          </tr>
+			        </thead>
+			        <tbody>			        
+			        	<tr>
+			            	<td class="text-center">01/05/2015</td>
+		        			<td class="text-center">01/12/2016</td>
+		        			<td class="text-center">$ 10,000.00</td>			        			
+		        			<td class="text-center">2 months</td>					
+			        	</tr>								
+			        	<tr>
+			            	<td class="text-center">01/05/2015</td>
+		        			<td class="text-center">01/12/2016</td>
+		        			<td class="text-center">$ 500.00</td>			        			
+		        			<td class="text-center">6 months</td>					
+			        	</tr>								
+			        	<tr>
+			            	<td class="text-center">01/05/2015</td>
+		        			<td class="text-center">01/12/2016</td>
+		        			<td class="text-center">$ 200.00</td>			        			
+		        			<td class="text-center">1 months</td>					
+			        	</tr>							
+					</tbody>
+				</table>
+			</div> 
 		</div>
 	</div>
 </div>
@@ -201,3 +338,17 @@
 </form>
 
 @stop
+
+@section('append_css')
+	<style type="text/css">
+		select { 
+			height: 100%!important; 
+			margin-left: 5%;
+			font-family: sans-serif!important;
+  			font-size: 12px!important;			
+		}
+		select option {
+			padding: 5px;
+		}
+	</style>
+@append

@@ -16,12 +16,7 @@ Route::get('/', function()
 	return View::make('home')->with('menu', 'home');
 });
 
-Route::get('/giving-options', function()
+Route::get('/{link}', function($link)
 {
-	return View::make('giving-options')->with('menu', 'giving-options');
-});
-
-Route::get('/donors', function()
-{
-	return View::make('donors')->with('menu', 'donors');
+	return View::make($link)->with('menu', $link);
 });

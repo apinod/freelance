@@ -3,7 +3,7 @@
 @section('content')
 
 <div class="flat_area grid_16">
-	<h2>Giving Options</h2>
+	<h2><i class="fa fa-list-ol"></i>&nbsp;Giving Options</h2>
 </div>
 
 <div class="grid_16 box">

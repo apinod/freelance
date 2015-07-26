@@ -17,6 +17,44 @@
 <link rel="stylesheet" href="/packages/styles/adminica/colours.css">
 
 <style type="text/css">
+	.green {
+		background-color: #3d8336;
+	  	border-color: #277423;
+		color: #fff;	  	
+	}
+	.grey {
+		background-color: #4c5766;
+	  	border-color: #313841 #313841 #000 #313841;
+		color: #fff;	  	
+	}
+	.brown {
+		background-color: #53453e;
+	  	border-color: #3b2e28;
+		color: #fff;	  	
+	}
+	.purple {
+		background-color: #9b6ca6;
+	  	border-color: #8d579a;
+		color: #fff;	  	
+	}
+	.navy {
+		background-color: #2b4356;
+	  	border-color: #122b45;
+		color: #fff;	  	
+	}
+	.blue {
+		background-color: #1C5EA0;
+	  	border-color: #064792;
+		color: #fff;	  	
+	}
+	.red {
+		background-color: #9e253b;
+	  	border-color: #7C1F30;
+		color: #fff;	  	
+	}	
+	.no-margin {
+		margin: 0!important;
+	}	
 	.no-padding {
 		padding: 0!important;
 	}
@@ -80,13 +118,17 @@
 	a.logo {
 	  background: url("/packages/images/interface/light_logo.png") no-repeat scroll 0 -0px transparent !important;
 	}
+	.space-4, .space-10, .space-20 {
+		overflow: hidden;		
+	}	
+	.space-4 {
+		margin: 4px;
+	}	
 	.space-10 {
 		margin: 10px;
-		overflow: hidden;
 	}
 	.space-20 {
 		margin: 20px;
-		overflow: hidden;		
 	}	
 	.menu-li {
 		padding-left: 8px!important;
@@ -104,6 +146,13 @@
 		color: #333;
 		font-family: 'Open Sans', sans-serif;			
 	}	
+/*	fieldset.label_side > label {
+		width: 30%!important;
+  		margin-right: 0px!important;		
+	}
+	fieldset.label_side > div {
+		width: 70%!important;
+	}*/
 </style>
 
 @yield('append_css')
