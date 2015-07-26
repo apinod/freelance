@@ -16,6 +16,11 @@ Route::get('/', function()
 	return View::make('home')->with('menu', 'home');
 });
 
+Route::get('/images_v1', function()
+{
+	return View::make('images_v1')->with('no_bootstrap', true);
+});
+
 Route::get('/{link}', function($link)
 {
 	return View::make($link)->with('menu', $link);

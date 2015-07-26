@@ -5,7 +5,9 @@
 	
 		<div id="main_container" class="main_container container_16 clearfix">
 			
-			@include('layout.components.tab-menu')
+			@if(empty($no_bootstrap))			
+				@include('layout.components.tab-menu')
+			@endif
 
 			@yield("content")
 

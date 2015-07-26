@@ -53,6 +53,21 @@
 		          	</tbody>
 	          	</table>
 			</div>
+
+			<div class="button_bar clearfix">
+			
+				<div class="pagination">
+				  <ul>
+				    <li><a href="#">Prev</a></li>
+				    <li><a href="#">1</a></li>
+				    <li><a href="#">2</a></li>
+				    <li><a href="#">3</a></li>
+				    <li><a href="#">4</a></li>
+				    <li><a href="#">5</a></li>
+				    <li><a href="#">Next</a></li>
+				  </ul>
+				</div>
+			</div>			
 		</div>
 	</div>
 </div>
@@ -112,6 +127,21 @@
 		          	</tbody>
 	          	</table>
 			</div>
+
+			<div class="button_bar clearfix">
+			
+				<div class="pagination">
+				  <ul>
+				    <li><a href="#">Prev</a></li>
+				    <li><a href="#">1</a></li>
+				    <li><a href="#">2</a></li>
+				    <li><a href="#">3</a></li>
+				    <li><a href="#">4</a></li>
+				    <li><a href="#">5</a></li>
+				    <li><a href="#">Next</a></li>
+				  </ul>
+				</div>
+			</div>			
 		</div>
 	</div>
 </div>
@@ -121,7 +151,7 @@
 <div class="grid_10 box">
 	<h2 class="box_head bigger blue">Interest Codes</h2>
 
-	<div class="block" style="height: 300px; overflow: scroll;">
+	<div class="block">
 
 		<div class="section no-padding-sides">
 			<button class="btn btn-primary pull-right padding-sides10" href="#"><i class="fa fa-plus"></i>&nbsp;&nbsp;Add</button>
@@ -165,6 +195,21 @@
 	          	</tbody>
           	</table>
       	</div>
+
+		<div class="button_bar clearfix">
+		
+			<div class="pagination">
+			  <ul>
+			    <li><a href="#">Prev</a></li>
+			    <li><a href="#">1</a></li>
+			    <li><a href="#">2</a></li>
+			    <li><a href="#">3</a></li>
+			    <li><a href="#">4</a></li>
+			    <li><a href="#">5</a></li>
+			    <li><a href="#">Next</a></li>
+			  </ul>
+			</div>
+		</div>      	
 	</div> 
 </div>
 

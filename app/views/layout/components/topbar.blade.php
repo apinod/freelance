@@ -12,4 +12,19 @@
 			<li><a href="login_slide.php" class="dialog_button" data-dialog="dialog_logout">Logout</a></li>
 		</ul>
 	</div><!-- #user_box --> --}}
+
+	@if(!empty($no_bootstrap))		
+		<button onclick="redirectToHome()" class="blue large has_text pull-right" style="margin-right: 50px; font-size: 150%;">
+			&nbsp;<i class="fa fa-hand-o-left"></i>&nbsp;<span>Back To Home Page</span>
+		</button>
+	@endif
 </div><!-- #topbar -->
+
+<script>
+
+	function redirectToHome()
+	{
+		document.location.href = "/";
+	}
+
+</script>

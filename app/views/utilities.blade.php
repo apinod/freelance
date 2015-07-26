@@ -56,6 +56,21 @@
 			        </tbody>
 		      	</table>
 			</div>
+
+			<div class="button_bar clearfix">
+			
+				<div class="pagination">
+				  <ul>
+				    <li><a href="#">Prev</a></li>
+				    <li><a href="#">1</a></li>
+				    <li><a href="#">2</a></li>
+				    <li><a href="#">3</a></li>
+				    <li><a href="#">4</a></li>
+				    <li><a href="#">5</a></li>
+				    <li><a href="#">Next</a></li>
+				  </ul>
+				</div>
+			</div>			
 		</div>
 	</div>
 </div>
@@ -70,15 +85,15 @@
 				<h1 style="margin-bottom: 3px">Export</h1>
 
 				<div class="section clearfix">
-					<a href="#" class="btn btn-blue"><i class="fa fa-file-text-o bigger"></i><h2 class="no-margin">Names to CSV</h2></a>		
+					<a onclick="return false;" href="#" class="btn btn-blue"><i class="fa fa-file-text-o bigger"></i><h2 class="no-margin">Names to CSV</h2></a>		
 				</div>
 				
 				<div class="section clearfix">
-					<a href="#" class="btn btn-blue"><i class="fa fa-file-text-o bigger"></i><h2 class="no-margin">Gifts to CSV</h2></a>		
+					<a onclick="return false;" href="#" class="btn btn-blue"><i class="fa fa-file-text-o bigger"></i><h2 class="no-margin">Gifts to CSV</h2></a>		
 				</div>		
 
 				<div class="section clearfix">
-					<a href="#" class="btn btn-blue"><i class="fa fa-file-text-o bigger"></i><h2 class="no-margin">Pledges to CSV</h2></a>		
+					<a onclick="return false;" href="#" class="btn btn-blue"><i class="fa fa-file-text-o bigger"></i><h2 class="no-margin">Pledges to CSV</h2></a>		
 				</div>		
 			</div>
 			
@@ -88,11 +103,11 @@
 				<h1 style="margin-bottom: 3px">Duplicates</h1>
 
 				<div class="section clearfix">
-					<a href="#" class="btn btn-blue"><i class="fa fa-link bigger"></i><h2 class="no-margin">Combine 2 Names</h2></a>		
+					<a onclick="return false;" href="#" class="btn btn-blue"><i class="fa fa-link bigger"></i><h2 class="no-margin">Combine 2 Names</h2></a>		
 				</div>
 				
 				<div class="section clearfix">
-					<a href="#" class="btn btn-blue"><i class="fa fa-files-o bigger"></i><h2 class="no-margin">Duplicate Merge Report</h2></a>		
+					<a onclick="return false;" href="#" class="btn btn-blue"><i class="fa fa-files-o bigger"></i><h2 class="no-margin">Duplicate Merge Report</h2></a>		
 				</div>		
 			</div>
 		</div>

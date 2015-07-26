@@ -3,10 +3,12 @@
 
 <!-- Styles -->
 
+
 <link rel="stylesheet" href="/packages/styles/adminica/reset.css">
 <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400,700">
 
-<link rel="stylesheet" href="/packages/styles/plugins/bootstrap/bootstrap-2.3.1.css">
+@yield('prepend_css', '<link rel="stylesheet" href="/packages/styles/plugins/bootstrap/bootstrap-2.3.1.css">')
+
 <link rel="stylesheet" href="/packages/styles/plugins/all/plugins.css">
 <link rel="stylesheet" href="/packages/styles/adminica/all.css">
 
@@ -17,6 +19,13 @@
 <link rel="stylesheet" href="/packages/styles/adminica/colours.css">
 
 <style type="text/css">
+	.pagination {
+		float: right!important;
+		margin: 0px!important;
+	}
+	.pagination > ul {
+		margin: 0px!important;
+	}	
 	.green {
 		background-color: #3d8336;
 	  	border-color: #277423;
@@ -152,13 +161,6 @@
 		color: #333;
 		font-family: 'Open Sans', sans-serif;			
 	}	
-/*	fieldset.label_side > label {
-		width: 30%!important;
-  		margin-right: 0px!important;		
-	}
-	fieldset.label_side > div {
-		width: 70%!important;
-	}*/
 </style>
 
 @yield('append_css')

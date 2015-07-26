@@ -1,3 +1,6 @@
 
 @include('layout.components.topbar')
-@include('layout.components.navbar-fixed')
+
+@if(empty($no_bootstrap))
+	@include('layout.components.navbar-fixed')
+@endif
