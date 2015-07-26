@@ -6,7 +6,7 @@
 	<h2><i class="fa fa-bar-chart"></i>&nbsp;Reports</h2>
 </div>
 
-<div class="box grid_10 light">
+<div class="box grid_10">
 	<h2 class="box_head">Gifts</h2>
 	<div class="block">
 		<div class="columns clearfix">
@@ -40,7 +40,15 @@
 						<fieldset class="label_side top no_lines">
 							<label for="text_field_inline" class="text-right">Giving Option</label>
 							<div>
-								<input type="text" name="from">
+								<select>
+									<option>Red</option>
+									<option>Green</option>
+									<option selected="selected">Blue</option>
+									<option>Cyan</option>
+									<option>Magenta</option>
+									<option>Yellow</option>
+									<option>Black</option>
+								</select>
 							</div>
 						</fieldset>
 					</div>
@@ -48,7 +56,15 @@
 						<fieldset class="label_side label_small top no_lines">
 							<label for="text_field_inline" class="text-right">Interest Code</label>
 							<div>
-								<input type="text" name="from">
+								<select>
+									<option>Red</option>
+									<option>Green</option>
+									<option>Blue</option>
+									<option>Cyan</option>
+									<option>Magenta</option>
+									<option>Yellow</option>
+									<option selected="selected">Black</option>
+								</select>
 							</div>
 						</fieldset>
 					</div>					
@@ -95,10 +111,10 @@
 			</div>
 		</div>
 		<div class="space-10"></div>
-		<div class="button_bar clearfix">
-			<button type="button" class="btn btn-success pull-right padding-sides10 icon_only text_only" href="#"><i class="fa fa-file-excel-o"></i>&nbsp;&nbsp;Produce CSV</button>		
-			<button type="button" style="margin-right: 10px;" class="btn btn-danger pull-right padding-sides10 icon_only text_only" href="#"><i class="fa fa-file-pdf-o"></i>&nbsp;&nbsp;Produce PDF</button>
-		</div>
+		<div class="button_bar clearfix text-center">
+			<a onclick="return false;" style="margin-right: 10px;" class="btn btn-danger padding-sides10 icon_only text_only" href="#"><i class="fa fa-file-pdf-o"></i>&nbsp;&nbsp;Produce PDF</a>		
+			<a onclick="return false;" class="btn btn-success padding-sides10 icon_only text_only" href="#"><i class="fa fa-file-excel-o"></i>&nbsp;&nbsp;Produce CSV</a>			
+		</div>	
 	</div>	
 </div>
 
@@ -110,10 +126,10 @@
 		</div>
 
 		<div class="space-10"></div>
-		<div class="button_bar clearfix">
-			<button type="button" class="btn btn-success pull-right padding-sides10 icon_only text_only" href="#"><i class="fa fa-file-excel-o"></i>&nbsp;&nbsp;Produce CSV</button>		
-			<button type="button" style="margin-right: 10px;" class="btn btn-danger pull-right padding-sides10 icon_only text_only" href="#"><i class="fa fa-file-pdf-o"></i>&nbsp;&nbsp;Produce PDF</button>
-		</div>		
+		<div class="button_bar clearfix text-center">
+			<a onclick="return false;" style="margin-right: 10px;" class="btn btn-danger padding-sides10 icon_only text_only" href="#"><i class="fa fa-file-pdf-o"></i>&nbsp;&nbsp;Produce PDF</a>		
+			<a onclick="return false;" class="btn btn-success padding-sides10 icon_only text_only" href="#"><i class="fa fa-file-excel-o"></i>&nbsp;&nbsp;Produce CSV</a>			
+		</div>					
 	</div>
 </div>
 

@@ -3,7 +3,7 @@
 @section('content')
 
 <div class="flat_area grid_16">
-	<h2><i class="fa fa-code"></i>&nbsp;Codes</h2>
+	<h2><i class="fa fa-barcode"></i>&nbsp;Codes</h2>
 </div>
 
 <div class="grid_16 box">
@@ -179,8 +179,8 @@
 			<li><span class="spark_bar small random_number_5 spark_inline"></span>Membership</li>
 			<li><span class="spark_bar small random_number_5 spark_inline"></span>Events</li>
 		</ul>	
-		<div class="button_bar clearfix">
-			<button class="btn btn-success pull-right padding-sides10 icon_only text_only" href="#"><i class="fa fa-plus"></i>&nbsp;&nbsp;Add</button>
+		<div class="button_bar clearfix text-center">
+			<a onclick="return false;" class="btn btn-success padding-sides10 icon_only text_only" href="#"><i class="fa fa-plus"></i>&nbsp;&nbsp;Add</a>
 		</div>
 	</div>
 </div>

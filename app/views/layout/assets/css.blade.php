@@ -38,14 +38,14 @@
 		color: #fff;	  	
 	}
 	.navy {
-		background-color: #2b4356;
-	  	border-color: #122b45;
-		color: #fff;	  	
+		background-color: #2b4356!important;
+	  	border-color: #122b45!important;
+		color: #fff!important;	  	
 	}
 	.blue {
-		background-color: #1C5EA0;
-	  	border-color: #064792;
-		color: #fff;	  	
+		background-color: #1C5EA0!important;
+	  	border-color: #064792!important;
+		color: #fff!important;	  	
 	}
 	.red {
 		background-color: #9e253b;
@@ -62,7 +62,7 @@
 		padding-left: 0!important;
 		padding-right: 0!important;
 	}
-	.col_5, .col_10, .col_90 {
+	.col_5, .col_10, .col_15, .col_35, .col_90 {
 	  position: relative;
 	  display: block;
 	  float: left;	  
@@ -73,6 +73,12 @@
 	.col_10 {
 	  width: 10%!important;
 	}
+	.col_15 {
+	  width: 15%!important;
+	}	
+	.col_35 {
+	  width: 35%!important;
+	}		
 	.col_90 {
 	  width: 90%!important;
 	}	

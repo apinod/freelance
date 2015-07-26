@@ -7,9 +7,9 @@
 		<li {{ $menu == 'donors' ? 'class="current"' : ''}}><a href="/donors" class="menu-li"><i class="fa fa-user"></i>&nbsp;&nbsp;Donors</a></li>
 		<li {{ $menu == 'premiums' ? 'class="current"' : ''}}><a href="/premiums" class="menu-li"><i class="fa fa-star"></i>&nbsp;&nbsp;Premiums</a></li>		
 		<li {{ $menu == 'gift-cards' ? 'class="current"' : ''}}><a href="/gift-cards" class="menu-li"><i class="fa fa-credit-card"></i>&nbsp;&nbsp;Gift Cards</a></li>
-		<li {{ $menu == 'codes' ? 'class="current"' : ''}}><a href="/codes" class="menu-li"><i class="fa fa-code"></i>&nbsp;&nbsp;Codes</a></li>
+		<li {{ $menu == 'codes' ? 'class="current"' : ''}}><a href="/codes" class="menu-li"><i class="fa fa-barcode"></i>&nbsp;&nbsp;Codes</a></li>
 		<li {{ $menu == 'reports' ? 'class="current"' : ''}}><a href="/reports" class="menu-li"><i class="fa fa-bar-chart"></i>&nbsp;&nbsp;Reports</a></li>						
-		<li {{ $menu == 'communication' ? 'class="current"' : ''}}><a href="#" class="menu-li"><i class="fa fa-phone"></i>&nbsp;&nbsp;Communication</a></li>
-		<li {{ $menu == 'utilities' ? 'class="current"' : ''}}><a href="#" class="menu-li"><i class="fa fa-money"></i>&nbsp;&nbsp;Utilities</a></li>
+		<li {{ $menu == 'communication' ? 'class="current"' : ''}}><a href="/communication" class="menu-li"><i class="fa fa-phone"></i>&nbsp;&nbsp;Communication</a></li>
+		<li {{ $menu == 'utilities' ? 'class="current"' : ''}}><a href="/utilities" class="menu-li"><i class="fa fa-wrench"></i>&nbsp;&nbsp;Utilities</a></li>
 		<li {{ $menu == 'images' ? 'class="current"' : ''}}><a href="#" class="menu-li"><i class="fa fa-image"></i>&nbsp;&nbsp;Images</a></li>								
 </div><!-- #nav_top -->

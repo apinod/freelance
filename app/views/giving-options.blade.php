@@ -208,20 +208,44 @@
 							<fieldset class="label_side label_small no-border">
 								<label for="text_field_inline" class="no-border">Appeal</label>							
 								<div class="clearfix no-border">	
-									<input type="text" name="appeal" style="width: 50%!important; margin-right: 5px;" class="pull-left">
-									<button type="button" class="btn btn-success padding-sides10 icon_only text_only pull-left" href="#"><i class="fa fa-plus"></i>&nbsp;&nbsp;Add</button>
+									<select class="no-margin col_50">
+										<option>Red</option>
+										<option>Green</option>
+										<option selected="selected">Blue</option>
+										<option>Cyan</option>
+										<option>Magenta</option>
+										<option>Yellow</option>
+										<option>Black</option>
+									</select>
+									<button style="margin-left: 5px;" type="button" class="btn btn-success padding-sides10 icon_only text_only" href="#"><i class="fa fa-plus"></i>&nbsp;&nbsp;Add</button>
 								</div>								
 
 								<label for="text_field_inline" class="no-border">Fund</label>							
 								<div class="clearfix no-border">	
-									<input type="text" name="fund" style="width: 50%!important; margin-right: 5px;" class="pull-left">
-									<button type="button" class="btn btn-success padding-sides10 icon_only text_only pull-left" href="#"><i class="fa fa-plus"></i>&nbsp;&nbsp;Add</button>
+									<select class="no-margin col_50">
+										<option>Red</option>
+										<option>Green</option>
+										<option>Blue</option>
+										<option>Cyan</option>
+										<option>Magenta</option>
+										<option selected="selected">Yellow</option>
+										<option>Black</option>
+									</select>
+									<button style="margin-left: 5px;" type="button" class="btn btn-success padding-sides10 icon_only text_only" href="#"><i class="fa fa-plus"></i>&nbsp;&nbsp;Add</button>
 								</div>							
 
 								<label for="text_field_inline" class="no-border">Letter</label>							
 								<div class="clearfix no-border">	
-									<input type="text" name="letter" style="width: 50%!important; margin-right: 5px;" class="pull-left">
-									<button type="button" class="btn btn-success padding-sides10 icon_only text_only pull-left" href="#"><i class="fa fa-plus"></i>&nbsp;&nbsp;Add</button>
+									<select class="no-margin col_50">
+										<option>Red</option>
+										<option>Green</option>
+										<option>Blue</option>
+										<option selected="selected">Cyan</option>
+										<option>Magenta</option>
+										<option>Yellow</option>
+										<option>Black</option>
+									</select>
+									<button style="margin-left: 5px;" type="button" class="btn btn-success padding-sides10 icon_only text_only" href="#"><i class="fa fa-plus"></i>&nbsp;&nbsp;Add</button>
 								</div>							
 							</fieldset>
 						</div>
