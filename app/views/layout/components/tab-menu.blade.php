@@ -2,7 +2,7 @@
 @if(!empty($menu))
 	<div id="nav_top" class="dropdown_menu clearfix round_top">
 		<ul class="clearfix">
-			<li {{ $menu == 'home' ? 'class="current"' : ''}}><a href="/" class="menu-li"><i class="fa fa-home"></i>&nbsp;&nbsp;Home</a></li>								
+			<li {{ $menu == 'home' ? 'class="current"' : ''}}><a href="/home" class="menu-li"><i class="fa fa-home"></i>&nbsp;&nbsp;Home</a></li>								
 			<li {{ $menu == 'company' ? 'class="current"' : ''}}><a href="/company" class="menu-li"><i class="fa fa-building-o"></i>&nbsp;&nbsp;Company</a></li>										
 			<li {{ $menu == 'giving-options' ? 'class="current"' : ''}}><a href="/giving-options" class="menu-li"><i class="fa fa-list-ol"></i>&nbsp;&nbsp;Giving Options</a></li>	
 			<li {{ $menu == 'pages' ? 'class="current"' : ''}}><a href="/pages" class="menu-li"><i class="fa fa-file-text-o"></i>&nbsp;&nbsp;Pages</a></li>

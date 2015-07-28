@@ -27,9 +27,9 @@
 		margin: 0px!important;
 	}	
 	.green {
-		background-color: #3d8336;
-	  	border-color: #277423;
-		color: #fff;	  	
+		background-color: #3d8336!important;
+	  	border-color: #277423!important;
+		color: #fff!important;	  	
 	}
 	.grey {
 		background-color: #4c5766;

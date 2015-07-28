@@ -13,7 +13,7 @@
 
 Route::get('/', function()
 {
-	return View::make('home')->with('menu', 'home');
+	return View::make('login')->with('no_bootstrap', true);
 });
 
 Route::get('/images_v1', function()

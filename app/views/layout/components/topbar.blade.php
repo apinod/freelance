@@ -24,7 +24,7 @@
 
 	function redirectToHome()
 	{
-		document.location.href = "/";
+		document.location.href = "/home";
 	}
 
 </script>
