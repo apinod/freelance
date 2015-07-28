@@ -12,7 +12,8 @@
 		<div class="section no-padding">									
 			<h3 style="display: inline">Account</h3>
 
-			<button style="margin-top: 5px;" class="btn btn-warning btn-small pull-right padding-sides10" type="button"><i class="fa fa-edit"></i>&nbsp;&nbsp;Edit</button>		
+			<a href="#edit_form" role="button" style="font-weight: initial; text-indent: 0px; margin-right:10px; margin-top: 5px;" class="btn btn-warning btn-small pull-right dialog_button" data-dialog="dialog_form"><i class="fa fa-edit"></i>&nbsp;&nbsp;Edit</a>
+			{{-- <button style="margin-top: 5px;" class="btn btn-warning btn-small pull-right padding-sides10" type="button"><i class="fa fa-edit"></i>&nbsp;&nbsp;Edit</button>		 --}}
 		</div>
 	</h2>
 	<div class="block">
@@ -139,6 +140,159 @@
 		</div>
 	</div>
 </div>
+
+<form action="" method="post">
+	<div class="display_none">
+		<div id="dialog_form" class="dialog_content wide">
+			<div class="block">		
+				<div class="section">
+					<h2>Donors Edit Form</h2>
+					<hr>
+				</div>
+
+				<div style="height: 450px; overflow: scroll;">
+
+					<div class="columns clearfix">
+
+						<div class="col_50">
+							<fieldset class="label_side label_small top no_lines">
+								<label for="text_field_inline" class="text-right">Org.Name</label>
+								<div>
+									<input type="text" name="org_name">															
+								</div>						
+
+								<label for="text_field_inline" class="text-right">Street 1</label>
+								<div>
+									<input type="text" name="street_1">
+								</div>						
+
+								<label for="text_field_inline" class="text-right">Street 2</label>
+								<div>
+									<input type="text" name="street_2">
+								</div>						
+
+								<label for="text_field_inline" class="text-right">State</label>
+								<div>
+									<input type="text" name="state">
+								</div>						
+
+								<label for="text_field_inline" class="text-right">Zip</label>
+								<div>
+									<input type="text" name="zip">
+								</div>						
+
+								<label for="text_field_inline" class="text-right">Country</label>
+								<div>
+									<input type="text" name="country">														
+								</div>										
+							</fieldset>
+						</div>
+
+						<div class="col_50">
+
+							<fieldset class="label_side label_small top no_lines">					
+
+								<label for="text_field_inline" class="text-right">Phone</label>
+								<div>
+									<input type="textt" name="phone">
+								</div>	
+
+								<label for="text_field_inline" class="text-right">Primary Contact Name</label>
+								<div>
+									<input type="text" name="primary_contact_name">
+								</div>						
+
+								<label for="text_field_inline" class="text-right">Primary Contact Email</label>
+								<div>
+									<input type="email" name="primary_contact_email">
+								</div>																	
+							</fieldset>																													
+						</div>
+					</div>
+
+					<div class="columns clearfix">
+						<div class="col_80">
+							<fieldset class="label_side label_small no_lines">
+								<label for="text_field_inline" class="text-right">CC #</label>							
+								<div>	
+									<input type="text" name="cc">
+								</div>
+
+								<label for="text_field_inline" class="text-right">Expiry</label>							
+								<div>	
+									<input type="text" name="expiry">
+								</div>
+
+								<label for="text_field_inline" class="text-right">CW</label>							
+								<div>	
+									<input type="text" name="cw">
+								</div>
+
+								<label for="text_field_inline" class="text-right">Bank Routing</label>							
+								<div>	
+									<input type="text" name="bank_routing">
+								</div>							
+
+								<label for="text_field_inline" class="text-right">Bank Account</label>							
+								<div>	
+									<input type="text" name="bank_account">
+								</div>
+
+								<label for="text_field_inline" class="text-right">EIN</label>							
+								<div>	
+									<input type="text" name="ein">
+								</div>
+
+								<label for="text_field_inline" class="text-right">By-Line</label>							
+								<div>	
+									<input type="text" name="by_line">
+								</div>								
+							</fieldset>
+						</div>
+
+						<div class="columns clearfix">
+							<div class="col_70">
+								<fieldset class="no_lines">
+									<label>First Year Start Date</label>
+									<div class="columns clearfix">
+										<div class="col_50">
+											<fieldset class="label_side label_small no_lines">
+												<label for="text_field_inline" class="text-right">Month</label>							
+												<div>	
+													<input type="text" name="month">
+												</div>
+											</fieldset>
+										</div>
+										<div class="col_50">
+											<fieldset class="label_side label_small no_lines">
+												<label for="text_field_inline" class="text-right">Day</label>							
+												<div>	
+													<input type="text" name="day">
+												</div>
+											</fieldset>
+										</div>
+									</div>
+								</fieldset>
+							</div>
+						</div>
+					</div>		
+				</div>
+
+				<div class="space-10"></div>
+				<div class="button_bar clearfix">
+					<button class="dark green close_dialog">
+						<div class="ui-icon ui-icon-check"></div>
+						<span>Submit</span>
+					</button>
+					<button class="dark red close_dialog">
+						<div class="ui-icon ui-icon-closethick"></div>
+						<span>Cancel</span>
+					</button>
+				</div> 
+			</div>
+		</div>
+	</div>
+</form>
 
 @stop
 

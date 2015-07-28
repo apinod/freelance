@@ -21,7 +21,7 @@
         <link rel="stylesheet" href="/packages/styles/adminica/reset.css">
         <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400,700">
 
-        <!-- @yield('prepend_css', '<link rel="stylesheet" href="/packages/styles/plugins/bootstrap/bootstrap-2.3.1.css">') -->
+        <link rel="stylesheet" href="/packages/styles/plugins/bootstrap/bootstrap-2.3.1.css">
 
         <link rel="stylesheet" href="/packages/styles/plugins/all/plugins.css">
         <link rel="stylesheet" href="/packages/styles/adminica/all.css">
